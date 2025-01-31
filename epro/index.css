@@ -1,0 +1,12 @@
+.carouselimg {
+    height: 500px;
+}
+.carouselimg  img {
+    height: 100%;
+    width: 100%;
+    background-size: auto;
+
+}
+.navbar{
+    position: sticky; top: 0;
+    backdrop-filter: blur(45px);}

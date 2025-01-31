@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appliances</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <!-- icon cnd -->
+  <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <style>
+    .heading {
+      color: green;
+      border-bottom: 4px solid;
+      text-align: center;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      border-radius: 18px;
+      padding-top: 20px;
+      margin-top: 20px;
+
+    }
+
+    .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .card {
+            width: 19rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .card img {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            height: 350px;
+            /* Increased height here */
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .btn-buy {
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .btn-buy:hover {
+            background-color: darkgreen;
+            color: white;
+            text-decoration: none;
+        }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg "  style="background-color: rgba(44, 172, 44, 0.932);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">TASHA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./appliances.html">Appliance</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./Cookware.html">Cookware</a></li>
+              <li><a class="dropdown-item" href="./Refrigeration.html">Refrigeration</a></li>
+              <li><a class="dropdown-item" href="./Laundry.html">Laundry Accessories</a></li>
+              <li><a class="dropdown-item" href="./Foods.html">Food Storages</a></li>
+              <li><a class="dropdown-item" href="./Knives and tools.html">Knives and Tools</a></li>
+
+
+
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./About.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Contact.html">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+      <a class="nav-link" href="./login.html"><i class="fa-solid fa-user" style="margin: 5px  ;"></i></a>
+      <a class="nav-link" href="./Feedback.html"><i class="fa-regular fa-face-smile-beam" style="margin-right: 15px;"></i></a>
+
+    </div>
+  </nav>
+
+
+  <!--  crousel -->
+
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/slide1.jpg" class="d-block w-100 carouselimg" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/slide2.png" class="d-block w-100 carouselimg" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="images/slide3.png" class="d-block w-100 carouselimg" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- carousel end -->
+
+
+
+  <!--Blenders-->
+  <div class="heading"><h2>Blenders</h2></div>
+  <!-- start cards -->
+  <div class="container card-container">
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="images/b1.jpg" class="card-img-top" alt="Appliance 1">
+      <div class="card-body">
+        <h5 class="card-title">Aeitto Blender</h5>
+        <p class="card-text">Aeitto Blender, Blenders for Kitchen with 1500-Watt Motor, 68 Oz Large Capacity, Countertop Professional Blenders for Ice Crush, Frozen Drinks, Black</p>
+        <p class="card-price">Rs.16,000</p>
+        <button class="btn-buy" data-appliance="Cooking Pot" data-price="Rs.16,000">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="images/b2.jpg" class="card-img-top" alt="Appliance 1">
+      <div class="card-body">
+        <h5 class="card-title">Chefman Countertop</h5>
+        <p class="card-text">Chefman Countertop + Travel Dynamic Blending System, 12-Piece Set, 3 Programmed Speeds & Pulse, Easy Ice Crushing for Shakes & Smoothies, Dishwasher-Safe 32-Oz Pitcher, 12Oz & 2 24Oz Tumblers, Black</p>
+        <p class="card-price">Rs.18,700</p>
+        <button class="btn-buy" data-appliance="Cooking Pot" data-price="Rs.18,700">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="images/b3.jpg" class="card-img-top" alt="Appliance 1">
+      <div class="card-body">
+        <h5 class="card-title">BEZIA 6 Quart Cooking Pot</h5>
+        <p class="card-text">Personal Blender, Electric Shake Bottle with 2 x 20oz Travel Bottle and Coffee/Spices Jar, Portable Shaker Cups for Protein Shakes, 500W Single Serve Blender for Shakes and Smoothies, Sports(Black).</p>
+        <p class="card-price">Rs.14,320</p>
+        <button class="btn-buy" data-appliance="Cooking Pot" data-price="Rs.14,320">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!--bread makers-->
+  <div class="heading"><h2>Bread Makers</h2></div>
+  <div class="container card-container">
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="images/bm1.jpg" class="card-img-top" alt="Appliance 1">
+      <div class="card-body">
+        <h5 class="card-title">Bread Maker</h5>
+        <p class="card-text">Bread Maker, 2LB Compact Bread Machine with Auto Yeast & Nut Dispenser, 21-in-1 Programmable, 3 Loaf Sizes 3 Crust Colors, White</p>
+        <p class="card-price">Rs.17,000</p>
+        <button class="btn-buy" data-appliance="Cooking Pot" data-price="Rs.17,000">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="images/bm2.jpg" class="card-img-top" alt="Appliance 1">
+      <div class="card-body">
+        <h5 class="card-title">Elite Gourmet</h5>
+        <p class="card-text">Elite Gourmet EBM8103SS Programmable Bread Maker Machine, 3 Loaf Sizes, 19 Menu Functions Gluten Free White Wheat Rye French and more, 2 Lb, Stainless Steel</p>
+        <p class="card-price">Rs.11.600</p>
+        <button class="btn-buy" data-appliance="Cooking Pot" data-price="Rs.11.600">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="images/bm3.jpg" class="card-img-top" alt="Appliance 1">
+      <div class="card-body">
+        <h5 class="card-title">KITCHENARM</h5>
+        <p class="card-text">KITCHENARM 29-in-1 SMART Bread Machine with Gluten Free Setting 2LB 1.5LB 1LB Bread Maker Machine with Homemade Cycle - Stainless Steel Breadmaker with Recipes Whole Wheat Bread Making Machine</p>
+        <p class="card-price">Rs.13,000</p>
+        <button class="btn-buy" data-appliance="Cooking Pot" data-price="Rs.13,000">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!--Coffee Makers-->
+  <div class="heading"><h2>Coffee Makers</h2></div>
+
+  <div class="container card-container">
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="images/cf1.jpg" class="card-img-top" alt="Appliance 1">
+      <div class="card-body">
+        <h5 class="card-title">Coffee Maker</h5>
+        <p class="card-text">BLACK+DECKER 12-Cup Coffee Maker with Easy On/Off Switch, Easy Pour, Non-Drip Carafe with Removable Filter Basket, Vortex Technology, Black</p>
+        <p class="card-price">Rs.15,700</p>
+        <button class="btn-buy" data-appliance="Cooking Pot" data-price="Rs.15,700">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="images/cf2.jpg" class="card-img-top" alt="Appliance 1">
+      <div class="card-body">
+        <h5 class="card-title">Hamilton Coffee Maker</h5>
+        <p class="card-text">Hamilton Beach 5 Cup Compact Drip Coffee Maker, Works with Smart Plugs, Glass Carafe, Auto Pause and Pour, Black & Stainless Steel (46110)</p>
+        <p class="card-price">Rs.14,990</p>
+        <button class="btn-buy" data-appliance="Cooking Pot" data-price="Rs.14,990">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="images/cf3.jpg" class="card-img-top" alt="Appliance 1">
+      <div class="card-body">
+        <h5 class="card-title">Hamilton Beach FlexBrew</h5>
+        <p class="card-text">Hamilton Beach FlexBrew Advanced 5-in-1 Programmable 12 Cup Drip and Single Serve Hot & Iced Coffee Maker with Movable 60 oz. Water Reservoir, Use Pod Packs and Grounds, Fast Brewing, Black (49924)</p>
+        <p class="card-price">Rs.11,200</p>
+        <button class="btn-buy" data-appliance="Cooking Pot" data-price="Rs.11,200">Buy Now</button>
+      </div>
+    </div>
+  </div>
+  <!--Ice-Cream and sorbet makers-->
+  <div class="heading"><h2>Ice-Cream and sorbet makers</h2></div>
+  <div class="container card-container">
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="images/ic1.jpg" class="card-img-top" alt="Appliance 1">
+      <div class="card-body">
+        <h5 class="card-title">  Ice Cream Maker</h5>
+        <p class="card-text">Ice Cream Maker with Compressor, Automatic Ice Cream Maker Machine - No Pre Freezing, 2.5L Gelato Machine and Ice Cream Machine with 3 Modes, LCD Display & Timer, 2H Keep Cool, Stainless Steel</p>
+        <p class="card-price">Rs.18,690</p>
+        <button class="btn-buy" data-appliance="Cooking Pot" data-price="Rs.18,690">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="images/ic2.jpg" class="card-img-top" alt="Appliance 1">
+      <div class="card-body">
+        <h5 class="card-title"> Homtone
+           Ice Cream Maker</h5>
+        <p class="card-text">Homtone Ice Cream Maker with Compressor, 2.64 Quart Automatic Ice Cream Machine - No Pre Freezing, Gelato Maker and Icecream Maker with 3 Modes, LCD Digital Display,2H Keep Cool, Stainless Steel</p>
+        <p class="card-price">Rs.19,000</p>
+        <button class="btn-buy" data-appliance="Cooking Pot" data-price="Rs.19,000">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="images/ic3.jpg" class="card-img-top" alt="Appliance 1">
+      <div class="card-body">
+        <h5 class="card-title">Hamilton   Beach Electric </h5>
+        <p class="card-text">Hamilton Beach Electric Automatic Ice Cream Maker, Frozen Yogurt, Sorbet, Custard 1.5 Quart, White (68880)</p>
+        <p class="card-price">Rs.16,700</p>
+        <button class="btn-buy" data-appliance="Cooking Pot" data-price="Rs.16,700">Buy Now</button>
+      </div>
+    </div>
+  </div>
+  <!--Electric Kettles-->
+  <div class="heading"><h2>Electric Kettles</h2></div>
+  <div class="container card-container">
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="images/ct1.jpg" class="card-img-top" alt="Appliance 1">
+      <div class="card-body">
+        <h5 class="card-title">Vianté Electric Kettle</h5>
+        <p class="card-text">Vianté Electric Kettle With Tea Infuser For Loose Leaf Tea. Hot Tea Maker With Temperature Control And Automatic Shut Off. Tea Kettle With Brewing Programs. 1.5 Liters Capacity | Midnight Blue Color</p>
+        <p class="card-price">Rs.18,100</p>
+        <button class="btn-buy" data-appliance="Cooking Pot" data-price="Rs.18,100">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="images/ct2.jpg" class="card-img-top" alt="Appliance 1">
+      <div class="card-body">
+        <h5 class="card-title">Speed-Boil Electric Kettle</h5>
+        <p class="card-text">Speed-Boil Electric Kettle For Coffee & Tea - 1.7L Water Boiler 1500W, Borosilicate Glass, Easy Clean Wide Opening, Auto Shut-Off, Cool Touch Handle, LED Light. 360° Rotation, Boil Dry Protection</p>
+        <p class="card-price">Rs.15,000</p>
+        <button class="btn-buy" data-appliance="Cooking Pot" data-price="Rs.15,000">Buy Now</button>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="images/ct3.jpg" class="card-img-top" alt="Appliance 1">
+      <div class="card-body">
+        <h5 class="card-title">Taylor Swoden Electric Kettle</h5>
+        <p class="card-text">Taylor Swoden Electric Kettle with Tea Infuser, 1L Small Electric Tea Kettle with Keep Warm, LED Light Hot Water Boiler & Heater for Coffee & Tea, Auto Shut-Off & Boil Dry Protection, BPA Free, Black</p>
+        <p class="card-price">Rs.23,999</p>
+        <button class="btn-buy" data-appliance="Cooking Pot" data-price="Rs.23,999">Buy Now</button>
+      </div>
+    </div>
+  </div>
+<!--Food Choppers-->
+<div class="heading"><h2>Food Choppers</h2></div>
+<div class="container card-container">
+  <!-- Card 1 -->
+  <div class="card">
+    <img src="images/fc1.jpg" class="card-img-top" alt="Appliance 1">
+    <div class="card-body">
+      <h5 class="card-title">BLACK+DECKER Food</h5>
+      <p class="card-text">BLACK+DECKER Food Processor and Vegetable Chopper, Stainless Steel Blade, 8-Cup Capacity, 450W Power with Attachments to Grate, Shred, Slice, Mince, Grind, and Puree</p>
+      <p class="card-price">Rs.11,000</p>
+      <button class="btn-buy" data-appliance="Cooking Pot" data-price="Rs.11,000">Buy Now</button>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card">
+    <img src="images/fc2.jpg" class="card-img-top" alt="Appliance 1">
+    <div class="card-body">
+      <h5 class="card-title">FOHERE Food chopper</h5>
+      <p class="card-text">FOHERE Food Processor, 12 Cup, 2-in-1 Feed Chute Vegetable Chopper & Meat Grinder for Mincing, Dicing, Shredding, Puree & Kneading Dough, Stainless Steel</p>
+      <p class="card-price">Rs.10,000</p>
+      <button class="btn-buy" data-appliance="Cooking Pot" data-price="Rs.10,000">Buy Now</button>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card">
+    <img src="images/fc3.jpg" class="card-img-top" alt="Appliance 1">
+    <div class="card-body">
+      <h5 class="card-title">Hamilton Chopper</h5>
+      <p class="card-text">Hamilton Beach Stack & Snap Food Processor and Vegetable Chopper, BPA Free, Stainless Steel Blades, 14 Cup + 4-Cup Mini Bowls, 3-Speed 500 Watt Motor, Black (70585)</p>
+      <p class="card-price">Rs.9,999</p>
+      <button class="btn-buy" data-appliance="Cooking Pot" data-price="Rs.9,999">Buy Now</button>
+    </div>
+  </div>
+</div>
+<!--Toasters-->
+<div class="heading"><h2>Toasters</h2></div>
+<div class="container card-container">
+  <!-- Card 1 -->
+  <div class="card">
+    <img src="images/to1.jpg" class="card-img-top" alt="Appliance 1">
+    <div class="card-body">
+      <h5 class="card-title">Holstein Toaster</h5>
+      <p class="card-text">Holstein Housewares - 2-Slice Toaster with 7 Browning Control Settings, Mint/Stainless Steel - Great to Toast Bread, Bagels and Waffles</p>
+      <p class="card-price">Rs.8,000</p>
+      <button class="btn-buy" data-appliance="Cooking Pot" data-price="Rs.8,000">Buy Now</button>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card">
+    <img src="images/to2.jpg" class="card-img-top" alt="Appliance 1">
+    <div class="card-body">
+      <h5 class="card-title">Smart Touch Screen Toaster</h5>
+      <p class="card-text">Keenstone Smart Touch Screen Toaster 2 Slice, Retro Wide Slot Stainless Steel Toaster with 6 Browning Levels, Reheat & Defrost, for Bagel, Toast, Bread, Removable Crumb Tray, Black</p>
+      <p class="card-price">Rs.16,550</p>
+      <button class="btn-buy" data-appliance="Cooking Pot" data-price="Rs.16,550">Buy Now</button>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card">
+    <img src="images/to3.jpg" class="card-img-top" alt="Appliance 1">
+    <div class="card-body">
+      <h5 class="card-title">Slot Toaster</h5>
+      <p class="card-text">Hamilton Beach 2 Slice Extra Wide Slot Toaster with Bagel & Defrost Settings, Shade Selector, Toast Boost, Auto Shutoff, Black & Stainless Steel (22633)</p>
+      <p class="card-price">Rs.7,000</p>
+      <button class="btn-buy" data-appliance="Cooking Pot" data-price="Rs.7,000">Buy Now</button>
+    </div>
+  </div>
+</div>
+  <!--  cards end -->
+
+
+
+
+  <!--  footer start -->
+  <footer class="text-center text-lg-start bg-body-tertiary text-muted mt-3">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="bi bi-instagram"></i>
+        </a>
+
+
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>TASHA
+            </h6>
+            <p>
+              "TASHA - Your Trusted Partner for High-Quality Home Appliances. Bringing Innovation and Comfort to Your
+              Home, One Product at a Time."
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Category
+            </h6>
+            <p>
+              <a href="./Cookware.html" class="text-reset">Cookware</a>
+            </p>
+            <p>
+              <a href="./Refrigeration.html" class="text-reset">Refrigeration</a>
+            </p>
+            <p>
+              <a href="./appliances.html" class="text-reset">appliances</a>
+            </p>
+            <p>
+              <a href="./Foods.html" class="text-reset">Food storage</a>
+            </p>
+            <p><a href="./Knives and tools.html " class="text-reset">Knives and Tools</a></p>
+            <p><a href="./Laundry.html" class="text-reset">Laundry Accessories</a></p>
+
+          </div>
+          <!-- Grid column -->
+
+
+
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> FB Area KARACHI .PK</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              support@tasha.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 92 234 567 88</p>
+            <p><i class="fas fa-print me-3"></i> + 92 234 467 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2025 Copyright:
+      <a class="text-reset fw-bold" href="">TASHA Appliances
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+
+
+</body>
+
+</html>

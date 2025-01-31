@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookware</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Bootstrap Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <style>
+        .heading {
+            color: green;
+            border-bottom: 4px solid;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-radius: 15px;
+            background-color: rgb(208, 241, 208);
+        }
+
+
+
+
+
+
+
+
+
+
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .card {
+            width: 18rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .card img {
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .card-text {
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .btn-buy {
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .btn-buy:hover {
+            background-color: darkgreen;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!--navbar start-->
+    <nav class="navbar navbar-expand-lg"  style="background-color: rgba(44, 172, 44, 0.932);">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">TASHA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./appliances.html">Appliance</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./Cookware.html">Cookware</a></li>
+                            <li><a class="dropdown-item" href="./Refrigeration.html">Refrigeration</a></li>
+                            <li><a class="dropdown-item" href="./Laundry.html">Laundry Accessories</a></li>
+                            <li><a class="dropdown-item" href="./Foods.html">Food Storages</a></li>
+                            <li><a class="dropdown-item" href="./Knives and tools.html">Knives and Tools</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="nav-link" href="./login.html"><i class="fa-solid fa-user" style="margin: 5px  ;"></i></a>
+      <a class="nav-link" href="./Feedback.html"><i class="fa-regular fa-face-smile-beam" style="margin-right: 15px;"></i></a>
+
+        </div>
+    </nav>
+    <!--navbar end-->
+
+    <!--  crousel -->
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/slide1.jpg" class="d-block w-100 carouselimg" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/slide2.png" class="d-block w-100 carouselimg" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/slide3.png" class="d-block w-100 carouselimg" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- carousel end -->
+
+    <div class="heading">
+        <h2>Cookware</h2>
+    </div>
+    <!-- Add Buying Cards Section -->
+    <div class="container card-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="images/c1.jpg" class="card-img-top" alt="Appliance 1">
+            <div class="card-body">
+                <h5 class="card-title">BEZIA 6 Quart Cooking Pot</h5>
+                <p class="card-text">BEZIA 6 Quart Cooking Pot with Lid, Nonstick Stock Pot/Stockpot with Lid, Induction
+                    Pot for Cooking, Kitchen Pots, Stew Pots, Soup Pots for All Stovetops, Oven Safe</p>
+                <p class="card-price">Rs.11000</p>
+                <button class="btn-buy" data-appliance="Cooking Pot" data-price="Rs.11000">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="images/c2.jpg" class="card-img-top" alt="Appliance 2">
+            <div class="card-body">
+                <h5 class="card-title">Cooking Pots with Lids</h5>
+                <p class="card-text">BEZIA 6 QT Cooking Pots with Lids, Soup Pot with Nonstick Ceramic Coating,
+                    Stay-Cool Handles, Nonstick Stock Pot with Lid, Dishwasher Safe, Induction Pot for Cooking, Pasta
+                    Pot with Strainer Lid.</p>
+                <p class="card-price">Rs.12000</p>
+                <button class="btn-buy" data-appliance="Saucepan" data-price="Rs.12000">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="images/c3.jpg" class="card-img-top" alt="Appliance 3">
+            <div class="card-body">
+                <h5 class="card-title">GOTHAM STEEL</h5>
+                <p class="card-text">GOTHAM STEEL 5 Qt Ceramic Stock Pot Multipurpose Pasta Pot with Strainer Lid &
+                    Twist and Lock Handles, Nonstick Ceramic Pot for Soup, Spaghetti, Rice, Pots for Kitchen, Dishwasher
+                    Safe - Copper</p>
+                <p class="card-price">Rs.8000</p>
+                <button class="btn-buy" data-appliance="Blender" data-price="Rs.8000">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="images/P1.jpg" class="card-img-top" alt="Appliance 4">
+            <div class="card-body">
+                <h5 class="card-title">SENSARTE</h5>
+                <p class="card-text">SENSARTE Nonstick Deep Frying Pan Skillet, 10/11/12-inch Saute Pan with Lid,
+                    Stay-cool Handle, Chef Pan Healthy Stone Cookware Cooking Pan, Induction Compatible, PFOA Free
+                    (10-Inch)</p>
+                <p class="card-price">Rs.10000</p>
+                <button class="btn-buy" data-appliance="Food Processor" data-price="Rs.10000">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <img src="images/P2.jpg" class="card-img-top" alt="Appliance 5">
+            <div class="card-body">
+                <h5 class="card-title">Cooking Pan</h5>
+                <p class="card-text">Hell's Kitchen Hybrid 11", Tri-Clad Stainless Steel and Nonstick Ceramic PFAS Free,
+                    no PFOA, PTFE, or Teflon, Non Toxic Cookware, Metal Utensil Safe, All Cooktops, Oven Safe</p>
+                <p class="card-price">Rs.5700</p>
+                <button class="btn-buy" data-appliance="Electric Kettle" data-price="Rs.5700">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card">
+            <img src="images/P3.jpg" class="card-img-top" alt="Appliance 6">
+            <div class="card-body">
+                <h5 class="card-title">Cooking Pan</h5>
+                <p class="card-text">T-fal Ultimate Hard Anodized Non Stick Jumbo Cooker With Lid & Helper Handle 5
+                    Quart, Oven Broiler Safe 400F, Lid Safe 350F, Cooking pan,.</p>
+                <p class="card-price">Rs.7000</p>
+                <button class="btn-buy" data-appliance="Toaster" data-price="Rs.7000">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card">
+            <img src="images/f1.jpg" class="card-img-top" alt="Appliance 7">
+            <div class="card-body">
+                <h5 class="card-title">Frying Pan</h5>
+                <p class="card-text">Hell's Kitchen Hybrid 11" Frying Pan, Tri-Clad Stainless Steel and Nonstick Ceramic
+                    PFAS Free, no PFOA, PTFE, or Teflon, Non Toxic Cookware, Metal Utensil Safe, All Cooktops, Oven Safe
+                </p>
+                <p class="card-price">Rs.7000</p>
+                <button class="btn-buy" data-appliance="Mixer" data-price="Rs.7000">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card">
+            <img src="images/f2.jpg" class="card-img-top" alt="Appliance 8">
+            <div class="card-body">
+                <h5 class="card-title">SENSARTE Nonstick Frying Pan</h5>
+                <p class="card-text">SENSARTE Nonstick Frying Pan Skillet, Swiss Granite Coating Omelette Pan, Healthy
+                    Stone Cookware Chef's Pan, PFOA Free</p>
+                <p class="card-price">Rs.8300</p>
+                <button class="btn-buy" data-appliance="Grinder" data-price="Rs.8300">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="card">
+            <img src="images/f3.jpg" class="card-img-top" alt="Appliance 9">
+            <div class="card-body">
+                <h5 class="card-title"> Nonstick Frying Pan Skillets</h5>
+                <p class="card-text">GOTHAM STEEL 10 + 11 Inch Ceramic Non Stick Frying Pans Nonstick Skillet, Stainless
+                    Steel Pans for Cooking Non Toxic, Nonstick Frying Pan Skillets, Copper Fry Pans, Oven and Dishwasher
+                    Safe</p>
+                <p class="card-price">Rs.5500</p>
+                <button class="btn-buy" data-appliance="Steamer" data-price="Rs.5500">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="card">
+            <img src="images/co1.jpg" class="card-img-top" alt="Appliance 10">
+            <div class="card-body">
+                <h5 class="card-title">Cookware Sets</h5>
+                <p class="card-text">Ninja NeverStick Ceramic Pro 14-Piece Cookware Set, Non-Stick Pots & Pans Set with
+                    Glass Lids, Ceramic, Stainless Steel, Stove to Oven Safe, All Stovetops & Induction Compatible,
+                    Black, CW39014BK</p>
+                <p class="card-price">Rs.20000</p>
+                <button class="btn-buy" data-appliance="Microwave Oven" data-price="Rs.20000">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="card">
+            <img src="images/co2.jpg" class="card-img-top" alt="Appliance 11">
+            <div class="card-body">
+                <h5 class="card-title">Cookware Set 16pcs</h5>
+                <p class="card-text">CAROTE Nonstick Pots and Pans,Cookware Set 16pcs Kitchen Cooking Sets, Pot and Pan
+                    Non Stick w/Frying pan.</p>
+                <p class="card-price">Rs.21000</p>
+                <button class="btn-buy" data-appliance="Pressure Cooker" data-price="Rs.21000">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="card">
+            <img src="images/co3.jpg" class="card-img-top" alt="Appliance 12">
+            <div class="card-body">
+                <h5 class="card-title">Waffle Maker</h5>
+                <p class="card-text">SENSARTE Ceramic Cookware Sets, Pots and Pans Set Nonstick, 14-Piece Induction
+                    Cookware, Non-toxic Healthy Non Stick Kitchen Cooking Set, with Frying Pans Set, PFAS PTFE PFOA PFOS
+                    Free.</p>
+                <p class="card-price">Rs.22500</p>
+                <button class="btn-buy" data-appliance="Waffle Maker" data-price="Rs.22500">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="card">
+            <img src="images/H1.jpg" class="card-img-top" alt="Appliance 13">
+            <div class="card-body">
+                <h5 class="card-title">Biryani Handi Set</h5>
+                <p class="card-text">Stainless Steel Biryani Handi Set | Premium Steel Hammered Finish Tope, Patila
+                    Handi | with Hammered Design, Tableware & Serveware for Home, Kitchen, Hotel & Restaurants (1.5
+                    Quart & 2.5 Quart).</p>
+                <p class="card-price">Rs.3500</p>
+                <button class="btn-buy" data-appliance="Rice Cooker" data-price="Rs.3500">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="card">
+            <img src="images/H2.jpg" class="card-img-top" alt="Appliance 14">
+            <div class="card-body">
+                <h5 class="card-title">Vinod Black Pearl Hard Anodised Handi</h5>
+                <p class="card-text"> Stainless Steel Lid Medium Size 5 Liters (5.2 Quarts) Suitable For Biryani, Pulao,
+                    Gravy Aluminum Pot - Metal Spoon Friendly 21 Cups.</p>
+                <p class="card-price">Rs.7000</p>
+                <button class="btn-buy" data-appliance="Electric Grill" data-price="Rs.7000">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="card">
+            <img src="images/H3.jpg" class="card-img-top" alt="Appliance 15">
+            <div class="card-body">
+                <h5 class="card-title">Copper Cooking Handi</h5>
+                <p class="card-text"> Art Villa Hammered Copper Cooking Handi with Lid, Copper Tin Lining 135 Oz,
+                    Traditional Indian Cookware & Serveware.</p>
+                <p class="card-price">Rs.6500</p>
+                <button class="btn-buy" data-appliance="Sandwich Maker" data-price="Rs.6500">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="card">
+            <img src="images/k1.jpg" class="card-img-top" alt="Appliance 16">
+            <div class="card-body">
+                <h5 class="card-title"> Kadhai</h5>
+                <p class="card-text">Vinod Cookware Professional Deep Kadhai 2.6 Liters(2.7 Quarts) 22cm Glass Lid
+                    Included Multi-Use Hard Anodized Wok/Pot Suitable For Indian Cooking, Sauces, Pasta, Stews, Soups
+                    Riveted Handles.</p>
+                <p class="card-price">Rs.6500</p>
+                <button class="btn-buy" data-appliance="Coffee Maker" data-price="Rs.6500">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 17 -->
+        <div class="card">
+            <img src="images/k2.webp" class="card-img-top" alt="Appliance 17">
+            <div class="card-body">
+                <h5 class="card-title">Kadai Nonstick</h5>
+                <p class="card-text">Kadai Nonstick Coating Kadhai Fry Pan with Steel Lid 2.5 Litres Nonstick All
+                    Purpose Pan Aluminium Karai with Lid Deep Fry Kadai Cookware Cooking.</p>
+                <p class="card-price">Rs.8000</p>
+                <button class="btn-buy" data-appliance="Air Fryer" data-price="Rs.8000">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 18 -->
+        <div class="card">
+            <img src="images/k3.jpg" class="card-img-top" alt="Appliance 18">
+            <div class="card-body">
+                <h5 class="card-title">Deep Kadhai with Glass</h5>
+                <p class="card-text">Vinod Cookware Hard Anodized Deep Kadhai with Glass Lid Black - 1.6 Liters (1.69
+                    Quarts) 18cm - Small Size - Multi-Use Pot/Wok - Suitable Cooking, Sauces, Pasta, Stews, Soups.</p>
+                <p class="card-price">Rs.7000</p>
+                <button class="btn-buy" data-appliance="Induction Cooktop" data-price="Rs.7000">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 19 -->
+        <div class="card">
+            <img src="images/g1.jpg" class="card-img-top" alt="Appliance 19">
+            <div class="card-body">
+                <h5 class="card-title"> Non Stick Grill Pan</h5>
+                <p class="card-text"> Non Stick Grill Pan Granite Coated with Pour Spout - Lightweight 2.66 Quart Grill
+                    Pan for Indoor Cooking with Grip Handle - Induction Compatible PFOA Free Stove Top (Black).</p>
+                <p class="card-price">Rs.7000</p>
+                <button class="btn-buy" data-appliance="Dishwasher" data-price="Rs.7000">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 20 -->
+        <div class="card">
+            <img src="images/g2.jpg" class="card-img-top" alt="Appliance 20">
+            <div class="card-body">
+                <h5 class="card-title"> Iron Square Grill Pan</h5>
+                <p class="card-text">Cuisinel Cast Iron Square Grill Pan + Glass Lid + Pan Scraper + Handle Cover -
+                    10.5" Pre-Seasoned Ridged Skillet - Grill, Stovetop, Fire, Indoor/Outdoor Use - for Grilling,
+                    Frying, Sauteing.</p>
+                <p class="card-price">Rs.5000</p>
+                <button class="btn-buy" data-appliance="Juicer" data-price="Rs.5000">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 21 -->
+        <div class="card">
+            <img src="images/g3.jpg" class="card-img-top" alt="Appliance 21">
+            <div class="card-body">
+                <h5 class="card-title">OXO Good Grips</h5>
+                <p class="card-text">OXO Good Grips 11” Square Grill Pan, 3-Layered German Engineered Nonstick Coating,
+                    Stainless Steel Handle with Nonslip Silicone, Black.</p>
+                <p class="card-price">Rs.4500</p>
+                <button class="btn-buy" data-appliance="Ice Cream Maker" data-price="Rs.4500">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 22 -->
+        <div class="card">
+            <img src="images/t1.jpg" class="card-img-top" alt="Appliance 22">
+            <div class="card-body">
+                <h5 class="card-title">Tawa</h5>
+                <p class="card-text">Vinod 27.5 cm Nonstick Induction Concave Tawa, 11", Crepe Pan/Griddle.</p>
+                <p class="card-price">Rs10000</p>
+                <button class="btn-buy" data-appliance="Electric Grill" data-price="Rs10000">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 23 -->
+        <div class="card">
+            <img src="images/t2.jpg" class="card-img-top" alt="Appliance 23">
+            <div class="card-body">
+                <h5 class="card-title">Hard Anodized Tawa</h5>
+                <p class="card-text">Vinod Cookware Hard Anodized Tawa, Black, 26.5 cm.</p>
+                <p class="card-price">Rs8000</p>
+                <button class="btn-buy" data-appliance="Smart Oven" data-price="Rs8000">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 24 -->
+        <div class="card">
+            <img src="images/t3.jpg" class="card-img-top" alt="Appliance 24">
+            <div class="card-body">
+                <h5 class="card-title">Dosa Tawa</h5>
+                <p class="card-text">Hawkins Futura 28 cm Dosa Tawa, Non Stick Dosa Tawa, Small Dosa Tawa (NDT28)
+                    (Black).</p>
+                <p class="card-price">Rs.6000</p>
+                <button class="btn-buy" data-appliance="Slow Cooker" data-price="Rs.6000">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 25 -->
+        <div class="card">
+            <img src="images/e1.jpg" class="card-img-top" alt="Appliance 25">
+            <div class="card-body">
+                <h5 class="card-title">Eggssentials</h5>
+                <p class="card-text">Eggssentials 2 IN 1 Egg Pan & Egg Poacher Pan, Granite Nonstick Fry Pan Poached Egg
+                    Maker and Frying Skillet with Lid, Poached Eggs Cooker Food Grade Safe PFOA Free with Spatula, Egg
+                    Cookware - 4 Cups.</p>
+                <p class="card-price">Rs.9000</p>
+                <button class="btn-buy" data-appliance="Vacuum Sealer" data-price="Rs.9000">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 26 -->
+        <div class="card">
+            <img src="images/e2.jpg" class="card-img-top" alt="Appliance 26">
+            <div class="card-body">
+                <h5 class="card-title">2 Cup Egg Poacher</h5>
+                <p class="card-text">Excelsteel 18/10 Stainless Steel 2 Cup Egg Poacher, Non Stick Easy Use Kitchenware
+                    Rust Resistant Stove Top Breakfast Brunch Cooking Pan.</p>
+                <p class="card-price">Rs.5000</p>
+                <button class="btn-buy" data-appliance="Food Warmer" data-price="Rs.5000">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 27 -->
+        <div class="card">
+            <img src="images/e3.jpg" class="card-img-top" alt="Appliance 27">
+            <div class="card-body">
+                <h5 class="card-title">GSlife Egg Poacher </h5>
+                <p class="card-text"> 304 Stainless Steel Poached Egg Cooker, Egg Poacher Pan Nonstick 4 Eggs with
+                    Handles, Poached Egg Maker Pot with Spatula & Brush, Silver, 4 Cups.</p>
+                <p class="card-price">Rs.7800</p>
+                <button class="btn-buy" data-appliance="Popcorn Maker" data-price="Rs.7800">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 28 -->
+        <div class="card">
+            <img src="images/s1.jpg" class="card-img-top" alt="Appliance 28">
+            <div class="card-body">
+                <h5 class="card-title">SUNHOUSE</h5>
+                <p class="card-text">SUNHOUSE - 3.3 Quarts Steamer Pots With Lid 2-Tier Multipurpose Stainless Steel
+                    Steaming Pot Cookware For Vegetable, Dumpling, Sauce, Food - Triple Bottom, Measurement Line.</p>
+                <p class="card-price">Rs.7000</p>
+                <button class="btn-buy" data-appliance="Food Processor" data-price="Rs.7000">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 29 -->
+        <div class="card">
+            <img src="images/s2.jpg" class="card-img-top" alt="Appliance 29">
+            <div class="card-body">
+                <h5 class="card-title">Electric Food Steamer</h5>
+                <p class="card-text">Electric Food Steamer, 9.3L 2-Tier Digital Steamers for Cooking with 24H Booking &
+                    6H Auto Warming, 8 Modes Fast Heating Vegetable Steamers Stainless Steel with Boil Dry Protection,
+                    Green.</p>
+                <p class="card-price">Rs.9000</p>
+                <button class="btn-buy" data-appliance="Electric Knife" data-price="Rs.9000">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Card 30 -->
+        <div class="card">
+            <img src="images/s3.jpg" class="card-img-top" alt="Appliance 30">
+            <div class="card-body">
+                <h5 class="card-title">Electric Hot Pot 3L with Steamer </h5>
+                <p class="card-text">Electric Hot Pot 3L with Steamer | Nonstick Frying Pan Ungraded Wok, 1200W Power
+                    Adjustment for Dorm and Home (Silicone Spatula Included).</p>
+                <p class="card-price">Rs.5000</p>
+                <button class="btn-buy" data-appliance="Bread Maker" data-price="$99.99">Buy Now</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- End Buying Cards Section -->
+
+    <script>
+        $(document).ready(function () {
+            $(".btn-buy").click(function () {
+                var applianceName = $(this).data("appliance");
+                alert("You clicked to buy: " + applianceName);
+            });
+        });
+    </script>
+
+    <!-- Footer Start -->
+    <footer class="text-center text-lg-start bg-body-tertiary text-muted mt-3">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <div>
+                <a href="" class="me-4 text-reset"><i class="bi bi-facebook-f"></i></a>
+                <a href="" class="me-4 text-reset"><i class="bi bi-twitter"></i></a>
+                <a href="" class="me-4 text-reset"><i class="bi bi-google"></i></a>
+                <a href="" class="me-4 text-reset"><i class="bi bi-instagram"></i></a>
+            </div>
+        </section>
+
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <div class="row mt-3">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>TASHA
+                        </h6>
+                        <p>
+                            "TASHA - Your Trusted Partner for High-Quality Home Appliances. Bringing Innovation and
+                            Comfort to Your Home, One Product at a Time."
+                        </p>
+                    </div>
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Category
+                        </h6>
+                        <p><a href="./Cookware.html" class="text-reset">Cookware</a></p>
+                        <p><a href="./Refrigeration.html" class="text-reset">Refrigeration</a></p>
+                        <p><a href="./appliances.html" class="text-reset">Appliance</a></p>
+                        <p><a href="./Foods.html" class="text-reset">Food storage</a></p>
+                        <p><a href="./Knives and tools.html " class="text-reset">Knives and Tools</a></p>
+                        <p><a href="./Laundry.html" class="text-reset">Laundry Accessories</a></p>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> FB Area KARACHI .PK</p>
+                        <p><i class="fas fa-envelope me-3"></i> support@tasha.com</p>
+                        <p><i class="fas fa-phone me-3"></i> + 92 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 92 234 567 89</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2025 Copyright:
+            <a class="text-reset fw-bold" href="#">TASHA Appliances</a>
+        </div>
+    </footer>
+    <!-- Footer End -->
+</body>
+
+</html>
